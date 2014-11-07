@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <title>Notepad Übersicht</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="../assets/css/main.css">
+		
+		<script type="text/javascript">
+		//Popupwindow fuer Nachrichtenausgabe; text ist der Text aus der Note
+			function popup (text) {
+				var fenster = window.open("", "Nachricht", "width=600,height=300,resizable=yes");
+				fenster.focus();
+				fenster.document.write("<h2>Nachricht</h2>");
+				fenster.document.write("<br/>");
+				fenster.document.write(text);
+			}
+		</script>
+    </head>
+    <body></body>
+    <script type="text/javascript" src="../src/EventEmitter2.js"></script>
+    <script type="text/javascript" src="../src/q.js"></script>
+    <script type="text/javascript" src="../src/Input.js"></script>
+    <script type="text/javascript" src="../src/Note.js"></script>
+    <script type="text/javascript" src="../src/NotePad.js"></script>
+    <script type="text/javascript" src="../src/Client.js"></script>
+    <script type="text/javascript" src="../src/main.js"></script>
+
+</html>
